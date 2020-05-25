@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 const BooksList = () => (
   <div>
@@ -22,5 +23,10 @@ const BooksList = () => (
   </div>
 );
 
+const mapStateToProps = function(state){
+  return {
+    books: state.books
+  }
+}
 
 export default BooksList;
