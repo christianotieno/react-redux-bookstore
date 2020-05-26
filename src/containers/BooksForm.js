@@ -2,13 +2,35 @@ import React, { useState } from 'react';
 
 const BooksForm = () => {
   const categories = [
-    'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi',
+    'Action',
+    'Biography',
+    'History',
+    'Horror',
+    'Kids',
+    'Learning',
+    'Sci-Fi',
   ];
 
   const [state, setState] = useState({
     title: '',
     category: categories[0],
   });
+
+  const handleChange = event => {
+    const { name, value } = event.target;
+    if (name === 'category') {
+      setState({
+        title: state.title,
+        category: value,
+      });
+    }
+    if (name === 'title') {
+      setState({
+        title: value,
+        category: state.category,
+      });
+    }
+  };
 
   return (
     <form>
