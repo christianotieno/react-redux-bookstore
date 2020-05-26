@@ -7,9 +7,19 @@ import rootReducer from './reducers';
 
 const booksArray = [
   {
-    id: (Math.random() * (10 ** 9)),
-    title: 'Red Queen',
-    category: 'Action',
+    id: Math.floor((Math.random() * (4 ** 8))),
+    title: 'Factulness',
+    category: 'Learning',
+  },
+  {
+    id: Math.floor((Math.random() * (4 ** 8))),
+    title: 'We are going to need more wine',
+    category: 'Biography',
+  },
+  {
+    id: Math.floor((Math.random() * (4 ** 8))),
+    title: 'Stranger',
+    category: 'Horror',
   },
 ];
 

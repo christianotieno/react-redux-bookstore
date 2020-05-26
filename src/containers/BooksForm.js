@@ -12,7 +12,7 @@ const BooksForm = () => {
           <option key={category} value={category}>{category}</option>
         ))}
       </select>
-      <button type="submit">Create new book</button>
+      <button type="submit">Store New Book</button>
     </form>
   );
 };
