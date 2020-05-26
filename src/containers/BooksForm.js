@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
 
-const BooksForm = () => {
+const BooksForm = ({ createBook }) => {
   const categories = [
     'Action',
     'Biography',
