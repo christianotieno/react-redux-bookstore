@@ -23,11 +23,8 @@ const booksArray = [
   },
 ];
 
-const filter = 'Stranger';
-
 const initState = {
   books: booksArray,
-  filter: filter
 };
 
 const store = createStore(rootReducer, initState);

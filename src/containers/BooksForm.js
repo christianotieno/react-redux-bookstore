@@ -38,12 +38,11 @@ const BooksForm = ({ createBook }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    const { title, category } = state;
+    const { title } = state;
     if (title) {
       createBook({
         id: (Math.floor(Math.random() * (4 ** 8))),
         title,
-        category,
       });
       setState({
         title: '',
