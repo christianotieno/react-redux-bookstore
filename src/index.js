@@ -4,6 +4,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import rootReducer from './reducers';
+import './styles/css/main.css';
 import { booksArray } from './helpers/app-helpers';
 
 const initialState = {
