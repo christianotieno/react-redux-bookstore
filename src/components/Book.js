@@ -20,7 +20,7 @@ const Book = ({ book, deleteBook }) => {
         type="button"
         onClick={handleRemoveBook}
       >
-        Remove
+        Remove book
 
       </button>
     </div>

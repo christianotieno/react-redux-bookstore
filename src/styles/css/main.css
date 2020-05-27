@@ -45,7 +45,8 @@ body {
   margin: 16px 27px;
   width: 100%; }
 
-.book-div button {
+.book-div button,
+.book-form button {
   width: 15%;
   font-size: 30px;
   color: #fafafa;
@@ -69,5 +70,30 @@ body {
   height: 29px;
   font-size: 22px;
   font-family: RobotoSlab; }
+
+.book-form {
+  margin: 20px 100px;
+  color: #a1a1a1; }
+
+.form-input {
+  height: 10vh;
+  display: flex;
+  color: #fefefe;
+  align-items: center;
+  justify-content: space-between; }
+
+.drop-down,
+.book-input {
+  width: 35%;
+  height: 30%;
+  margin: 5px;
+  padding: 5px 20px;
+  font-size: larger;
+  font-weight: bolder; }
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=main.css.map */
