@@ -14,18 +14,8 @@ const BooksForm = ({ createBook }) => {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    if (name === 'category') {
-      setState({
-        title: state.title,
-        category: value,
-      });
-    }
-    if (name === 'title') {
-      setState({
-        title: value,
-        category: state.category,
-      });
-    }
+    setState(previousState => (
+      { ...previousState, [name]: value }));
   };
 
   const handleSubmit = event => {
@@ -51,7 +41,7 @@ const BooksForm = ({ createBook }) => {
         onChange={handleChange}
         value={state.title}
         name="title"
-        placeholder="New book"
+        placeholder="Add New book"
         minLength="5"
         maxLength="30"
         required
