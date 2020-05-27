@@ -1,33 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import App from './components/App';
 import rootReducer from './reducers';
+import randomInt from './helpers/app-helpers';
 
 const booksArray = [
   {
-    id: Math.floor((Math.random() * (4 ** 8))),
+    id: randomInt(4, 8),
     title: 'Factulness',
     category: 'Learning',
   },
   {
-    id: Math.floor((Math.random() * (4 ** 8))),
+    id: randomInt(4, 8),
     title: 'We are going to need more wine',
     category: 'Biography',
   },
   {
-    id: Math.floor((Math.random() * (4 ** 8))),
+    id: randomInt(4, 8),
     title: 'Stranger',
     category: 'Horror',
   },
 ];
 
-const initState = {
+const initialState = {
   books: booksArray,
 };
 
-const store = createStore(rootReducer, initState);
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
   <Provider store={store}>
