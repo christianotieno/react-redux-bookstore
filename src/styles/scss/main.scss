@@ -6,17 +6,18 @@ body{
 .App {
   margin: 100px;
   border-radius: 4px;
-  background-color: #fafafa;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 
 }
 .header {
   display: flex;
-  margin: 0 100px;
+  padding: 0 100px;
   font-size: 15px;
   color: #0290ff;
   font-weight: bold;
   align-items: center;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
 
 
   ul {
@@ -39,4 +40,48 @@ body{
     color: #121212;
     letter-spacing: 1.9px;
   }
+}
+
+.book-div {
+  display: flex;
+  height: 170px;
+  border-radius: 4px;
+  margin: 20px 100px;
+  align-items: center;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.book-div p {
+  margin: 16px 27px;
+  width: 100%;
+}
+
+.book-div button {
+  width: 15%;
+  font-size: 30px;
+  color: #fafafa;
+  margin: 16px 20px;
+  font-family: RobotoSlab;
+  background-color: #0290ff;
+}
+
+.book-group {
+  width: 80%;
+}
+#category {
+  width: 70%;
+  height: 18px;
+  opacity: 0.5;
+  font-size: 14px;
+  color: #898989;
+  font-weight: bold;
+}
+
+#title {
+  width: 197px;
+  height: 29px;
+  font-size: 22px;
+  font-family: RobotoSlab;
 }
