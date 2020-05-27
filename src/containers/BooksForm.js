@@ -40,11 +40,12 @@ const BooksForm = ({ createBook }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    const { title } = state;
+    const { title, category } = state;
     if (title) {
       createBook({
         id: randomInt(4, 8),
         title,
+        category,
       });
       setState({
         title: '',
@@ -61,6 +62,9 @@ const BooksForm = ({ createBook }) => {
         value={state.title}
         name="title"
         placeholder="New book"
+        minLength="5"
+        maxLength="30"
+        required
       />
       <select
         onChange={handleChange}
@@ -73,7 +77,6 @@ const BooksForm = ({ createBook }) => {
             value={category}
           >
             {category}
-
           </option>
         ))}
       </select>
