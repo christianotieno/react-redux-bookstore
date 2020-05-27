@@ -60,10 +60,11 @@ body {
 
 .book-div button,
 .book-form button {
-  width: 15%;
-  font-size: 30px;
+  font-size: 25px;
   color: #fafafa;
   margin: 16px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #0290ff;
 }
 
@@ -97,6 +98,10 @@ body {
   color: #fefefe;
   align-items: center;
   justify-content: space-between;
+}
+
+.form-title {
+  text-transform: uppercase;
 }
 
 .drop-down,
