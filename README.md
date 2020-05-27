@@ -2,6 +2,8 @@
 
 This project was bootstrapped with Create React App.
 
+![screenshot](./public/screenshot.png)
+
 Additional description about the project and its features.
 
 ## Built With
