@@ -3,20 +3,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
-import randomInt from '../helpers/app-helpers';
+import { randomInt, categories } from '../helpers/app-helpers';
 
 
 const BooksForm = ({ createBook }) => {
-  const categories = [
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi',
-  ];
-
   const [state, setState] = useState({
     title: '',
     category: categories[0],
