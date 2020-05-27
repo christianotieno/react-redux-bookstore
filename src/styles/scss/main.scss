@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #f5f6fa;
   font-family: 'Montserrat', sans-serif;
 }
@@ -7,8 +7,8 @@ body{
   margin: 100px;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-
 }
+
 .header {
   display: flex;
   padding: 0 100px;
@@ -17,16 +17,16 @@ body{
   font-weight: bold;
   align-items: center;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
-
+  background-color: #fff;
 
   ul {
     display: flex;
+
     li {
       margin: 0 20px;
       list-style: none;
     }
-  } 
+  }
 
   #books {
     font-size: 13px;
@@ -49,7 +49,7 @@ body{
   margin: 20px 100px;
   align-items: center;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   justify-content: space-between;
 }
 
@@ -64,13 +64,13 @@ body{
   font-size: 30px;
   color: #fafafa;
   margin: 16px 20px;
-  font-family: RobotoSlab;
   background-color: #0290ff;
 }
 
 .book-group {
   width: 80%;
 }
+
 #category {
   width: 70%;
   height: 18px;
@@ -84,13 +84,13 @@ body{
   width: 197px;
   height: 29px;
   font-size: 22px;
-  font-family: RobotoSlab;
 }
 
 .book-form {
   margin: 20px 100px;
   color: #a1a1a1;
 }
+
 .form-input {
   height: 10vh;
   display: flex;
