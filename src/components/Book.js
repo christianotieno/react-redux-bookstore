@@ -9,10 +9,20 @@ const Book = ({ book, deleteBook }) => {
     <div className="book-div">
       <div className="book-group">
         <p id="category">
+          {' '}
           {book.category}
+          {' '}
         </p>
         <p id="title">
+          {' '}
           {book.title}
+          {' '}
+        </p>
+        <p id="book-number">
+          Book Number
+          {' '}
+          {book.id}
+          {' '}
         </p>
       </div>
       <button
