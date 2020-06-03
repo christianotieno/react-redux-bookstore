@@ -19,18 +19,22 @@ body {
   background-color: #fff;
   border: solid 1px #e8e8e8;
 }
+
 .header ul {
   display: flex;
 }
+
 .header ul li {
   margin: 0 20px;
   list-style: none;
 }
+
 .header #books {
   font-size: 13px;
   color: #121212;
   letter-spacing: 1.9px;
 }
+
 .header #categories {
   opacity: 0.5;
   font-size: 13px;
@@ -53,10 +57,12 @@ body {
   width: 70%;
   margin-left: 20px;
 }
+
 .left-book .top-left-book {
   padding: 0;
   margin: 2% 0;
 }
+
 .left-book .top-left-book #category {
   padding: 0;
   font-size: 14px;
@@ -64,12 +70,14 @@ body {
   font-weight: bold;
   margin: 0 1.5% 0 0;
 }
+
 .left-book .top-left-book #title {
   padding: 0;
   margin: 0;
   font-size: 22px;
   font-weight: bold;
 }
+
 .left-book .bottom-left-book {
   padding: 0;
   margin: 0;
@@ -88,7 +96,6 @@ body {
   font-size: 13px;
   font-weight: 300;
   color: #121212;
-  font-family: RobotoSlab;
 }
 
 #book-id {
@@ -96,7 +103,6 @@ body {
   font-weight: 300;
   color: #121212;
   letter-spacing: -0.4px;
-  font-family: RobotoSlab;
 }
 
 .book-links {
@@ -105,13 +111,14 @@ body {
   margin: 0;
 }
 
-ul li {
+.bottom-left-book ul li {
   margin: 0;
   font-size: 16px;
   list-style: none;
   text-decoration: none;
 }
-ul li a {
+
+.bottom-left-book ul li a {
   text-decoration: none;
 }
 
@@ -119,7 +126,6 @@ ul li a {
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
-  font-family: RobotoSlab;
 }
 
 #comments {
@@ -200,7 +206,6 @@ button {
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.5px;
-  font-family: RobotoSlab;
   text-transform: uppercase;
   background-color: #0290ff;
 }
@@ -211,5 +216,3 @@ button {
   padding: 0 15px;
   background: none;
 }
-
-/*# sourceMappingURL=main.css.map */
