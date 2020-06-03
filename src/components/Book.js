@@ -7,32 +7,35 @@ const Book = ({ book, deleteBook }) => {
   };
   return (
     <div className="book-div">
-      <div className="book-group">
-        <p id="category">
-          {' '}
-          {book.category}
-          {' '}
-        </p>
-        <p id="title">
-          {' '}
-          {book.title}
-          {' '}
-        </p>
-        <p id="book-number">
-          Book Number
-          {' '}
-          {book.id}
-          {' '}
-        </p>
-      </div>
-      <button
-        className="remove-button"
-        type="button"
-        onClick={handleRemoveBook}
-      >
-        Remove book
+      <div className="left-book">
+        <div className="top-left-book">
+          <p id="category">{book.category}</p>
+          <p id="title">{book.title}</p>
+        </div>
+        <div className="bottom-left-book">
+          <ul className="book-links">
+            <li><a href="/" className="book-details" id="comments">Comments</a></li>
+            <li>
+              <button id="remove-button" className=" book-details" type="button" onClick={handleRemoveBook}>
+                Remove
+              </button>
 
-      </button>
+            </li>
+            <li><a href="/" className="book-details" id="edit">Edit</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="right-book">
+        <p id="book-number">
+          Book Number:
+        </p>
+        <p id="book-id">
+          {book.id}
+        </p>
+        <button id="update-button" className="blue-button" type="button">
+          update progress
+        </button>
+      </div>
     </div>
   );
 };

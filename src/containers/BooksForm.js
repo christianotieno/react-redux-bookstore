@@ -50,6 +50,7 @@ const BooksForm = ({ createBook }) => {
           name="title"
           placeholder="Book Title"
           className="book-input"
+          id="book-input-field"
           minLength="5"
           maxLength="30"
           required
@@ -58,6 +59,7 @@ const BooksForm = ({ createBook }) => {
           onChange={handleChange}
           value={state.category}
           name="category"
+          id="chose-category"
           className="drop-down"
         >
           { categories.map(category => (
@@ -69,7 +71,7 @@ const BooksForm = ({ createBook }) => {
             </option>
           ))}
         </select>
-        <button type="submit">
+        <button id="add-book" className="blue-button" type="submit">
           Add Book
         </button>
       </form>

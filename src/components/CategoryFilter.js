@@ -15,6 +15,7 @@ const CategoryFilter = ({ filterCategory }) => {
       <select
         name="category"
         onChange={handleFilterChange}
+        id="chose-category-view"
         className="drop-down"
       >
         <option value="All">
