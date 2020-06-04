@@ -144,7 +144,6 @@ body {
 }
 
 .form-input {
-  width: 80%;
   height: 10vh;
   display: flex;
   color: #fefefe;
@@ -159,7 +158,7 @@ body {
 .drop-down,
 .book-input {
   height: 45px;
-  margin: 0 2%;
+  margin: 0 5px;
   font-size: larger;
   font-weight: bolder;
   border-radius: 4px;
@@ -168,8 +167,8 @@ body {
 }
 
 #book-input-field {
-  width: 65%;
-  padding-left: 10px;
+  width: 60%;
+  padding-left: 20px;
 }
 
 #chose-category {
@@ -177,7 +176,9 @@ body {
 }
 
 #add-book {
-  width: 10%;
+  margin: 0;
+  width: 15%;
+  padding: 0;
   font-weight: bold;
 }
 
@@ -201,8 +202,10 @@ button {
   width: auto;
   height: 45px;
   border: none;
+  border-radius: 5px;
   color: #fff;
   font-size: 15px;
+  padding: 0 4%;
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.5px;

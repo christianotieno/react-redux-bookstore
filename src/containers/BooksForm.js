@@ -72,7 +72,7 @@ const BooksForm = ({ createBook }) => {
           ))}
         </select>
         <button id="add-book" className="blue-button" type="submit">
-          Add Book
+          add book
         </button>
       </form>
     </div>
