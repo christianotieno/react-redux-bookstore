@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://blooming-beach-82800.herokuapp.com/)
+[Live Demo Link](https://glacial-garden-24746.herokuapp.com/)
 
 
 ## Getting Started
