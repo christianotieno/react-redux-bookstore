@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook, filterCategory } from '../actions';
 import Book from '../components/Book';
+import { removeBook, filterCategory } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 
@@ -21,33 +21,23 @@ const BooksList = ({
       <CategoryFilter
         filterCategory={filterCategory}
       />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          { books.filter(
-            book => (
-              filter === 'All'
-              || book.category === filter),
-          ).map(book => (
-            <Book
-              book={book}
-              key={book.id}
-              deleteBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
+      { books.filter(
+        book => (filter === 'All' || book.category === filter),
+      ).map(book => (
+        <Book
+          book={book}
+          key={book.id}
+          deleteBook={handleRemoveBook}
+        />
+      ))}
     </div>
   );
 };
 
-const mapStateToProps = state => ({ books: state.books, filter: state.filter });
+const mapStateToProps = state => ({
+  books: state.books,
+  filter: state.filter,
+});
 
 const mapDispatchToProps = dispatch => ({
   removeBook: book => dispatch(removeBook(book)),

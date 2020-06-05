@@ -8,19 +8,26 @@ const CategoryFilter = ({ filterCategory }) => {
     filterCategory(value);
   };
   return (
-    <select
-      name="category"
-      onChange={handleFilterChange}
-    >
-      <option value="All">
-        All
-      </option>
-      { categories.map(category => (
-        <option key={category} value={category}>
-          {category}
+    <div className="category-filter">
+      <h3>
+        Choose view category:
+      </h3>
+      <select
+        name="category"
+        onChange={handleFilterChange}
+        id="chose-category-view"
+        className="drop-down"
+      >
+        <option value="All">
+          All
         </option>
-      ))}
-    </select>
+        { categories.map(category => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 };
 

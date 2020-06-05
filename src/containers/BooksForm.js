@@ -35,35 +35,47 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        onChange={handleChange}
-        value={state.title}
-        name="title"
-        placeholder="Add New book"
-        minLength="5"
-        maxLength="30"
-        required
-      />
-      <select
-        onChange={handleChange}
-        value={state.category}
-        name="category"
+    <div className="book-form">
+      <h2 className="form-title">
+        add new Book
+      </h2>
+      <form
+        className="form-input"
+        onSubmit={handleSubmit}
       >
-        { categories.map(category => (
-          <option
-            key={category}
-            value={category}
-          >
-            {category}
-          </option>
-        ))}
-      </select>
-      <button type="submit">
-        Store New Book
-      </button>
-    </form>
+        <input
+          type="text"
+          onChange={handleChange}
+          value={state.title}
+          name="title"
+          placeholder="Book Title"
+          className="book-input"
+          id="book-input-field"
+          minLength="5"
+          maxLength="30"
+          required
+        />
+        <select
+          onChange={handleChange}
+          value={state.category}
+          name="category"
+          id="chose-category"
+          className="drop-down"
+        >
+          { categories.map(category => (
+            <option
+              key={category}
+              value={category}
+            >
+              {category}
+            </option>
+          ))}
+        </select>
+        <button id="add-book" className="blue-button" type="submit">
+          add book
+        </button>
+      </form>
+    </div>
   );
 };
 

@@ -1,4 +1,6 @@
-const randomInt = (min, max) => Math.floor(Math.random() * (min ** max));
+const randomInt = (min, max) => Math.floor(
+  Math.random() * (min ** max),
+);
 
 const booksArray = [
   {
