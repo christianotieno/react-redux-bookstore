@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ book, deleteBook }) => {
+const Book = ({ book, removeBook }) => {
   const handleRemoveBook = () => {
-    deleteBook(book);
+    removeBook(book);
   };
   return (
     <div className="book-div">
@@ -51,7 +51,7 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
-  deleteBook: PropTypes.func.isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 export default Book;

@@ -30,7 +30,7 @@ const BooksList = ({
         <Book
           book={book}
           key={book.id}
-          deleteBook={handleRemoveBook}
+          removeBook={handleRemoveBook}
         />
       ))}
     </div>

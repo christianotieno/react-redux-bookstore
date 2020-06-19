@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import createBook from '../actions/postBook';
-import { randomInt, categories } from '../helpers/app-helpers';
+import categories from '../helpers/app-helpers';
 
 
 const BooksForm = ({ createBook }) => {
@@ -23,7 +23,6 @@ const BooksForm = ({ createBook }) => {
     const { title, category } = state;
     if (title) {
       createBook({
-        id: randomInt(4, 8),
         title,
         category,
       });
