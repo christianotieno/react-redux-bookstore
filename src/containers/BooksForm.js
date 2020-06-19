@@ -1,10 +1,8 @@
-
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import createBook from '../actions/postBook';
 import categories from '../helpers/app-helpers';
-
 
 const BooksForm = ({ createBook }) => {
   const [state, setState] = useState({

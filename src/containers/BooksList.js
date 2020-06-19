@@ -7,7 +7,6 @@ import getBooks from '../actions/getBook';
 import removeBook from '../actions/removeBook';
 import CategoryFilter from '../components/CategoryFilter';
 
-
 const BooksList = ({
   books,
   filter,

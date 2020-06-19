@@ -8,5 +8,4 @@ const categories = [
   'Sci-Fi',
 ];
 
-
 export default categories;

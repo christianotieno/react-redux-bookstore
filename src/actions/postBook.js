@@ -2,7 +2,6 @@
 import axios from 'axios';
 import { CREATE_BOOK } from './index';
 
-
 const createBook = book => dispatch => {
   axios.post(
     'https://immense-taiga-94124.herokuapp.com/books',
