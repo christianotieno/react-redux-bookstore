@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBook, filterCategory } from '../actions';
+import { filterCategory } from '../actions/index';
+import getBooks from '../actions/getBook';
+import removeBook from '../actions/removeBook';
 import CategoryFilter from '../components/CategoryFilter';
 
 
@@ -10,11 +12,12 @@ const BooksList = ({
   books,
   filter,
   removeBook,
+  getBooks,
   filterCategory,
 }) => {
-  const handleRemoveBook = book => {
-    removeBook(book);
-  };
+  useEffect(() => { getBooks(); }, [getBooks]);
+
+  const handleRemoveBook = book => { removeBook(book); };
 
   return (
     <div>
@@ -34,14 +37,15 @@ const BooksList = ({
   );
 };
 
-const mapStateToProps = state => ({
-  books: state.books,
-  filter: state.filter,
+const mapStateToProps = ({ books: { books }, filter }) => ({
+  books,
+  filter,
 });
 
 const mapDispatchToProps = dispatch => ({
   removeBook: book => dispatch(removeBook(book)),
   filterCategory: filter => dispatch(filterCategory(filter)),
+  getBooks: () => dispatch(getBooks()),
 });
 
 BooksList.defaultProps = {
@@ -53,6 +57,7 @@ BooksList.propTypes = {
   removeBook: PropTypes.func.isRequired,
   filterCategory: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
+  getBooks: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

@@ -16,7 +16,12 @@ const Book = ({ book, deleteBook }) => {
           <ul className="book-links">
             <li><a href="/" className="book-details" id="comments">Comments</a></li>
             <li>
-              <button id="remove-button" className=" book-details" type="button" onClick={handleRemoveBook}>
+              <button
+                id="remove-button"
+                className=" book-details"
+                type="button"
+                onClick={handleRemoveBook}
+              >
                 Remove
               </button>
 

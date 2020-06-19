@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { GET_BOOKS } from './index';
 
-const getBook = () => dispatch => {
+const getBooks = () => dispatch => {
   axios.get(
     'https://immense-taiga-94124.herokuapp.com/books',
   ).then(response => {
@@ -9,4 +9,4 @@ const getBook = () => dispatch => {
   });
 };
 
-export default getBook;
+export default getBooks;

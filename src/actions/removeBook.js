@@ -7,8 +7,8 @@ const removeBook = id => dispatch => {
   axios.delete(
     `https://immense-taiga-94124.herokuapp.com/books/${id}`,
   ).then(response => {
-    if (response.err) {
-      console.log(response.err);
+    if (response.error) {
+      console.log(response.error);
     }
   }).catch(error => {
     console.log(error);
