@@ -23,10 +23,18 @@ A summary description of the project and its features underlying features below.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+## Prerequisites
 
 - Have node install
 - Knowledge of EcmaScript 6.
+
+
+## Future features or updates/improvements
+- The upcoming updates will consist of:
+1. A signup feature for users and profile sections to update, delete and manage their profiles
+2. A Share option for books and a way to update books on the site and more improved User interface for the platform.
+3. A sign in with social media accounts. 
+4. A linkage to Goodreads API to update books and retrieve more books upon a search by the user.
 
 ### Setup
 
