@@ -59,13 +59,13 @@ npx eslint .
 
 ## Authors
 
-👤 **Author1**
+👤 **Christian Otieno**
 
 - Github: [@christianotieno](https://github.com/christianotieno)
 - Twitter: [@iamchrisotieno](https://twitter.com/iamchrisotieno)
 - Linkedin: [Christian Otieno](https://www.linkedin.com/in/christianotieno/)
 
-👤 **Author2**
+👤 **UGWU COLLINS**
 
 - Github: [@collinsugwu](https://github.com/collinsugwu)
 - Linkedin: [UGWU COLLINS](https://www.linkedin.com/in/collins-ugwu-25896414a/)
