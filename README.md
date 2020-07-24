@@ -1,10 +1,10 @@
 # React-Redux Bookstore App
 
-This project was bootstrapped with Create React App.
+This project got bootstrapped with Create React App.
 
 ![screenshot](./public/screenshot.png)
 
-Additional description about the project and its features.
+A summary description of the project and its features underlying features below.
 
 ## Built With
 
@@ -54,7 +54,7 @@ npx eslint .
 
 ### Deployment
 
-- Deployed on heroku
+- Deployed on Heroku
 
 
 ## Authors
