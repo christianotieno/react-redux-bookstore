@@ -1,10 +1,14 @@
 # React-Redux Bookstore App
 
-This project got bootstrapped with Create React App.
+> This project got bootstrapped with Create React App.
+
+## A summary description of the project and its features underlying features below.
+
+**In this project, we used React and Redux to build a simple application. The project was a real-world project for a fictional company that required our help. The project got split into multiple milestones, and each had functional and technical requirements that all got implemented.**
 
 ![screenshot](./public/screenshot.png)
 
-A summary description of the project and its features underlying features below.
+
 
 ## Built With
 
