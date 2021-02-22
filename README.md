@@ -42,25 +42,25 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-```
+```terminal
 git clone git@github.com:christianotieno/react-redux-bookstore.git
 ```
 
 ### Install
 
-```
+```terminal
 npm install
 ```
 
 ### Usage
 
-```
-run npm start
+```terminal
+npm start
 ```
 
 ### Run linter checks
 
-```
+```terminal
 npx eslint .
 ```
 
